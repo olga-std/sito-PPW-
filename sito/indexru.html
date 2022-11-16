@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="img/logo/rimini.png">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript.js"></script>
+	<title>Римини</title>
+</head>
+<body>
+	<header class="header" id="Home">
+		<div class="header_top">
+			<div class="container">
+				<div class="header_top_logo">
+					<a class="infouma" href="https://infouma.fileli.unipi.it/" target="_blank">
+						<img src="img/logo/logo1.png" alt="infouma">
+					</a>
+					<a class="unipi" href="http://www.unipi.it" target="_blank" title="Università di Pisa">
+						<img src="img/logo/logo2.png" alt="unipi">
+					</a>
+				</div>
+				<div class="lenguage">
+					<a class="flag" href="index.html" title="IT"><img src="img/logo/it.png" alt="IT"></a>
+					<a class="flag" href="#" title="RU"><img src="img/logo/ru.png" alt="RU"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="fixed">
+			<div class="header_bottom">
+				<div class="container">
+					<div class="header_bottom_inner">
+						<div class="header_bottom_logo">
+							<a href="https://www.comune.rimini.it" target="_blank" title="Comune di Rimini">
+								<img src="img/logo/logo3.png" alt="comune Rimini">
+							</a>
+						</div>
+						<nav class="menu" id="menu_ru">
+							<ul>
+								<li><a href="#Home" class="scroll-to" id="menu_home">Главная</a></li>
+								<li><a href="#Ponte" class="scroll-to">Мост Тиберия</a></li>
+								<li><a href="#Arco" class="scroll-to">Арка Августа</a></li>
+								<li><a href="#Domus" class="scroll-to">Дом Хирурга</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider_home">
+			<div class="container">
+				<div class="slider">
+					<div class="slider_item">
+						<h1 id="h1_ru">Римини: основные достопримечательности города</h1>
+						<p>
+							Римини - это город с тысячелетней историей, с невероятным количеством памятников культуры и бесконечностью живописных мест.
+						</p>
+						<p>
+							Множество туристов ежегодно посещают исторический ценрт города чтобы увидеть Арку Августа, Мост Тиберия, Замок Сисмондо и городской музей - настоящие сокровища культурного наследия.
+						</p>
+						<p>
+							Стоит отметить, что исторический центр находятся в шаговой доступности от морского побережья, и до него очень просто добраться как пешком, так и при помощи общественного транспорта или на авто.
+						</p>
+					</div>
+					<div class="slider_item">
+						<div class="slider_img">
+							<img  class="img_home" height = "150" src="img/main/sl1.jpg" alt=""/>
+						</div>
+						<p>
+							В нескольких километрах от исторического центра города открывается другой мир - мир самых влиятельных династий всего итальянского полуострова:
+						</p>
+							<ul>
+								<li>великолепные загородные районы,</li>
+								<li>необычный холмистый ландшафт,</li>
+								<li>крутые гроты, скалы и пропасти,</li> 
+								<li>скрытые замки и секретные дворянские резиденции.</li>
+							</ul>
+					</div>
+					<div class="slider_item">
+						<div class="slider_img">
+							<img class="img_home" height="150" src="img/main/sl2.jpg" alt=""/>
+						</div>
+						<p>
+							Гордость города - морское побережье длиной более 15 км с разнообразными пляжными зонами. А также море - основа города Римини. Города, который лучше всех отображает гостеприимство Емилии Романьи.
+						</p>
+						<p>
+							Здесь ежедневный праздник с сотней спортивных, культурных и музыкальных мероприятий. Ярмарки и карнавалы, показывающие традиционный быт и приоткрывающие секреты местной кухни, очаровывающие любовью к морю.
+						</p>
+						<p>
+							Невозможно не влюбиться с первого взгляда!
+						</p>
+					</div>
+					<div class="slider_item">
+						<p>
+							<strong>Перенеси символы достопримечательностей на свои места.</strong>
+						</p>
+						<div id="game">
+							<div id="symbols_item">
+								<ul>
+									<li><img class="symbols" id="D" src="img/main/domus.png" draggable="true" alt="D"/></li>
+									<li><img class="symbols" id="A" src="img/main/arco.png" draggable="true" alt="A"/></li>
+									<li><img class="symbols" id="P" src="img/main/ponte.png" draggable="true" alt="P"/></li>
+								</ul>
+								<span id="ok">&#10003;</span>
+							</div>
+							<div id="map_item">
+								<div id="map">
+									<figure class="places" data-symbols-id="P" id="placeP"></figure>
+									<figure class="places" data-symbols-id="A" id="placeA"></figure>
+									<figure class="places" data-symbols-id="D" id="placeD"></figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="move" id="move_r">&#10095;</a>
+					<a class="move" id="move_l">&#10094;</a>
+				</div>
+			</div>
+		</div>
+		<div class="tabs">
+			<div class="hash" id="Ponte">
+				<div class="content" id="ponte">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group1" data-name="tab-1">Описание</div>
+							<div class="tabs-nav_item" data-group="group1" data-name="tab-2">Видео</div>
+							<div class="tabs-nav_item"  data-group="group1" data-name="tab-3">Местоположение</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group1">
+								<h2>Мост Тиберия</h2>
+								<p>
+									Мост Тиберия (Ponte di Tiberio) - самый старый мост Римини, в настоящее время является одной из самых посещаемых достопримечательностей и архитектурным памятником, входящим в состав исторического центра города.
+								</p>
+								<p>
+									Строительство моста относится к древнеримскому периоду. Первоначально строительные работы по возведению моста Тиберия начались при правлении императора Августа и закончились в 20 годы нашей эры, при правлении его преемника - императора Тиберия Юлия Цезаря Августа, в честь которого и назван этот древнеримский мост.
+								</p>
+								<p>
+									Мост пролегает через канал Римини и связывает собой две исторические части города: старый город и исторический квартал района Сан-Джулиано.
+								</p>
+								<p>
+									Протяженность моста составляет порядка 70 метров, в которые входят пять полукруглых арок со средней длиной пролета около 8 метров, опирающиеся на прочные опоры. Изначально мост был полностью выполнен из камней больших размеров, которые можно видеть и в настоящее время.
+								</p>
+							</div>
+							<div class="tab tab-2 group1">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/uE3RZGpgNCc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group1">
+								<p class="loco">Viale Tiberio, 47921 Rimini RN</p>
+								<div class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.9456947534927!2d12.56096136524128!3d44.06382998379889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3a2f175593d%3A0x925fc972c913c313!2sPonte%20di%20Tiberio!5e0!3m2!1sru!2sit!4v1584410479258!5m2!1sru!2sit" width="720" height="250"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hash" id="Arco">
+				<div class="content" id="arco">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group2" data-name="tab-1">Описание</div>
+							<div class="tabs-nav_item" data-group="group2" data-name="tab-2">Видео</div>
+							<div class="tabs-nav_item"  data-group="group2" data-name="tab-3">Местоположение</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group2">
+								<h2>Арка Августа</h2>
+								<p>
+									Историками установлена точная дата основания римского поселения Аримина на побережье моря. Это 268 год до нашей эры. Арка императора Августа  - это одна из самых популярных и посещаемых городских достопримечательностей Римини и древнейшая римская арка в стране. В 27 году до нашей эры было завершено строительство дороги, соединяющей побережье Адриатики и город Рим. Тогда и была возведена знаменитая арка, которой было дано имя  Императора Августа. Арку венчала целая квадрига скульптур. На ней стояли четыре лошади, управляемые императором Цезарем Октавианом Августом. В стенах крепости арка служила городскими воротами с юга во времена средних веков. Остовы от них сохранились неподалеку от арки до сих пор. Они находятся сегодня в парке Alcide Cervi. Скульптуры были заменены зубчатым верхом. На фасаде арки имеется четыре медальона с изображениями богов: здесь можно увидеть Минерву, Нептуна, Аполлона и Юпитера.
+								</p>
+								<p>
+									Арка императора Августа – это величественная и древняя достопримечательность города Римини. Ее возвели во времена Римской Империи. Эта триумфальная арка стала символом величия Цезаря Августа, который был  консулом Рима. В былые времена арка являлась частью стен, которые окружали город, защищая Римини от нападений врагов.
+								</p>
+							</div>
+							<div class="tab tab-2 group2">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/s6kneASWfRQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group2">
+								<p class="loco">Corso d'Augusto, 47923 Rimini RN</p>
+								<div class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.279717720595!2d12.56893101524102!3d44.05693233424799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3a6b416296f%3A0x70f54f5061c1f4a6!2z0JDRgNC60LAg0JDQstCz0YPRgdGC0LA!5e0!3m2!1sru!2sit!4v1584410785504!5m2!1sru!2sit" width="720" height="250" ></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hash" id="Domus">
+				<div class="content" id="domus">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group3" data-name="tab-1">Описание</div>
+							<div class="tabs-nav_item" data-group="group3" data-name="tab-2">Видео</div>
+							<div class="tabs-nav_item"  data-group="group3" data-name="tab-3">Местоположение</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group3">
+								<h2>Дом Хирурга</h2>
+								<p>
+									Интереснейший археологический объект, названный «Домом хирурга», был случайно обнаружен в 1989 г. и, после реставрационных работ, продолжавшихся восемнадцать лет, был открыт для публики в 2007 г. Территория раскопок занимает 700 кв. м. и представляет собой «многослойный пирог» из построек разных эпох. Кроме «Дома хирурга», датируемого II в. н.э., здесь видны следы других сооружений: жилища позднего периода римской империи, часть поселения времени высокого средневековья, а также кладбище.
+								</p>
+								<p>
+									Дом хирурга был двухэтажным зданием из кирпича, возведенном на каменном фундаменте, с окнами, выходящими на море. Там были найдены различные предметы быта и элементы домашней обстановки: вазы, амфоры, фрагменты мозаичного убранства и стенных росписей большой художественной ценности, многие из которых были перенесены в Городской Музей. Дом состоял из длинного коридора, соединявшего многочисленные помещения: спальню, называвшуюся «кубикулум», обеденный зал «триклиниум» и внутренний дворик «кавеа». Название дом получил вследствие того, что здесь был обнаружен комплект из 150 хирургических инструментов, использовавшихся в те времена для лечения переломов и рубленых ран. Это привело к мысли, что хозяин был военным хирургом, вероятно, родом из Греции, по имени Евтихий.
+								</p>
+							</div>
+							<div class="tab tab-2 group3">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/oDQzlv2FYhw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group3">
+								<p class="loco">Piazza Luigi Ferrari, 47921 Rimini RN</p>
+								<div class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.0177822238747!2d12.565399615241189!3d44.062341433895725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc398828bce71%3A0xf2ea19114827d23a!2sDomus%20del%20Chirurgo!5e0!3m2!1sru!2sit!4v1584410871801!5m2!1sru!2sit" width="720" height="250" ></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>	
+	<footer>
+		<div class="container">
+			Проект выполнен Ольгой Студитской (566175)<br>
+			для экзамена Проектирование и Програмирование Web (2019/20г.)<br>
+			v.studitskaya@studenti.unipi.it
+			<p>
+				Источники <span id="info"></span>
+			</p>
+			<div id="infoModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>Список используемой литературы</h3>
+					</div>
+					<div class="modal-body">
+						<p>Литература</p>
+						<ul>
+							<li>Vincenzo Ambriola, <em>Programmazione in JavaScript</em>, Versione 9.0, 30 gennaio 2019.</li>
+							<li>Eric T. Friman/ Elisabeth Robson, <em>Head First. JavaScript Programming</em>, 1st Edition, 2015.</li>
+							<li>Jennifer Niederst Robbins, <em>Learning Web Design</em>, 4th Edition, 2012.</li>
+						</ul>
+						<p>Ресурсы интернет</p>
+						<ul>
+							<li><a href="https://www.w3schools.com" target="_blank">w3schools.com</a>.</li>
+							<li><a href="https://developer.mozilla.org/ru/#" target="_blank">MDN web docs Mozilla</a>.</li>
+							<li><a href="https://ru.stackoverflow.com" target="_blank">Stack Overflow</a>.</li>
+							<li><a href="https://learn.javascript.ru" target="_blank">JAVASCRIPT.INFO</a>.</li>
+							<li><a href="https://javascript.ru" target="_blank">javascript.ru</a>.</li>
+							<li><a href="http://shpargalkablog.ru" target="_blank">Шпаргалка Блоггера</a>.</li>
+							<li><a href="https://html5book.ru" target="_blank">HTML5book</a>.</li>
+							<li><a href="https://www.youtube.com/watch?v=7HUCAYMylCQ">Coding Journey</a>.</li>
+						</ul>
+						<p>
+							Изображения и тексты взяты из интернета и впоследствии изменены.<br>
+							Для реализации видео использовались нижеперечисленные приложения:
+						</p>
+						<ul>
+							<li>Adobe Photoshop,</li>
+							<li>Adobe Premier pro,</li>
+							<li>Adobe Character Animation,</li>
+							<li>Audacity.</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<span id="close"><strong>Назад</strong></span>
+					</div>
+				</div>
+			</div>
+			<a href="https://jigsaw.w3.org/css-validator/validator.html.ru#validate_by_upload" target="_blank">
+				<img id="w3_css" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Правильный CSS!" />
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

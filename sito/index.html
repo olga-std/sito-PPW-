@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="img/logo/rimini.png">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript.js"></script>
+	<title>Rimini</title>
+</head>
+<body>
+	<header class="header" id="Home">
+		<div class="header_top">
+			<div class="container">
+				<div class="header_top_logo">
+					<a class="infouma" href="https://infouma.fileli.unipi.it/" target="_blank">
+						<img src="img/logo/logo1.png" alt="infouma">
+					</a>
+					<a class="unipi" href="http://www.unipi.it" target="_blank" title="Università di Pisa">
+						<img src="img/logo/logo2.png" alt="unipi">
+					</a>
+				</div>
+				<div class="lenguage">
+					<a class="flag" href="#" title="IT"><img src="img/logo/it.png" alt="IT"></a>
+					<a class="flag" href="indexru.html" title="RU"><img src="img/logo/ru.png" alt="RU"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="fixed">
+			<div class="header_bottom">
+				<div class="container">
+					<div class="header_bottom_inner">
+						<div class="header_bottom_logo">
+							<a href="https://www.comune.rimini.it" target="_blank" title="Comune di Rimini">
+								<img src="img/logo/logo3.png" alt="comune Rimini">
+							</a>
+						</div>
+						<nav class="menu">
+							<ul>
+								<li><a href="#Home" class="scroll-to" id="menu_home">Home</a></li>
+								<li><a href="#Ponte" class="scroll-to">Ponte di Tiberio</a></li>
+								<li><a href="#Arco" class="scroll-to">Arco d'Augusto</a></li>
+								<li><a href="#Domus" class="scroll-to">Domus del Chirurgo</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider_home">
+			<div class="container">
+				<div class="slider">
+					<div class="slider_item">
+						<h1>Rimini: i luoghi principali della città</h1>
+						<p>
+							Rimini è una città dal fascino millenario ricca di monumenti e punti di interesse.
+						</p>
+						<p>
+							Migliaia sono i turisti che visitano il centro storico ogni anno per vedere l'Arco d'Augusto, il ponte di Tiberio, Castel Sismondo, il Tempio Malatestiano ed il Museo della Città; veri e propri tesori d'arte e cultura.
+						</p>
+						<p>
+							Mette, quelle appena descritte, tutte facilmente raggiungibili dal Marina, sia a piedi con una breve passeggiata sia in auto o con mezzi publici.
+						</p>
+					</div>
+					<div class="slider_item">
+						<div class="slider_img">
+							<img class="img_home" height ="150" src="img/main/sl1.jpg" alt="rimini1"/>
+						</div>
+						<p>
+							A pochi chilometri dal centro storico della città si apre poi un altro mondo dalle più influenti dinastie che hanno segnato la storia dell'intera penisola italiana;
+						</p>
+							<ul>
+								<li>uno splendido enttroterra con un paesaggio colinare insolito,</li>
+								<li>irti speroni di roccia e precipizi,</li>
+								<li>castelli abbarbicati e segrete residenze nobbiliari.</li>
+							</ul>
+					</div>
+					<div class="slider_item">
+						<div class="slider_img">
+							<img class="img_home" height ="150" src="img/main/sl2.jpg" alt="rimini2"/>
+						</div>
+							<p>
+								Il titorale della città, una distesa di oltre 15 km di spiaggia, la	varietà degli stabililimenti balneari, nonché il mare ciò che più rapresenta la città di Rimini, la città che più di ogni altra in Italia esprime la cultura dell'ospitalità romagnola.
+							</p>
+							<p>
+								Qui ogni giorno è festà con centinaia di eventi sportivi, culturali, concerti e iniziative che richiamano la tradizione, la buona gastronomia e la passione per il mare.
+							</p>
+							<p>
+								Impossibile non innamorarsene a prima vista.
+							</p>
+					</div>
+					<div class="slider_item">
+						<p>
+							<strong> Metti i simboli dei luoghi principali di Rimini al posto giusto.</strong>
+						</p>
+						<div id="game">
+							<div id="symbols_item">
+								<ul>
+									<li><img class="symbols" id="D"  src="img/main/domus.png" draggable="true" alt="D"/></li>
+									<li><img class="symbols" id="A" src="img/main/arco.png" draggable="true" alt="A"/></li>
+									<li><img class="symbols" id="P" src="img/main/ponte.png" draggable="true" alt="P"/></li>
+								</ul>
+								<span id="ok">&#10003;</span>
+							</div>
+							<div id="map_item">
+								<div id="map">
+									<figure class="places" data-symbols-id="P" id="placeP"></figure>
+									<figure class="places" data-symbols-id="A" id="placeA"></figure>
+									<figure class="places" data-symbols-id="D" id="placeD"></figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="move" id="move_r">&#10095;</a>
+					<a class="move" id="move_l">&#10094;</a>
+				</div>
+			</div>
+		</div>
+		<div class="tabs">
+			<div class="hash" id="Ponte">
+				<div class="content" id="ponte">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group1" data-name="tab-1">Descrizione</div>
+							<div class="tabs-nav_item" data-group="group1" data-name="tab-2">Video</div>
+							<div class="tabs-nav_item"  data-group="group1" data-name="tab-3">Posizione</div>
+							</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group1">
+								<h2>Ponte di Tiberio</h2>
+								<p>
+									Imponente opera architettonica d'epoca romana, il ponte fu eretto sul Marecchia per decreto dell'Imperatore Augusto ed il suo compimento si deve al successore Tiberio (14 - 21 d.C.) come ricorda l'iscrizione che corre sui parapetti interni.
+								</p>
+								<p>
+									Il ponte segna l'inizio della via Emilia e si trova all'estremità della principale via storica della città (corso d'Augusto). Dal 1885 il ponte di Tiberio è monumento nazionale.
+								</p>
+								<p>
+									E' costruito interamente in pietra d'Istria, a cinque arcate, in stile dorico e rappresenta uno dei più notevoli ponti romani superstiti ancora oggi utilizzato dal traffico urbano; documento importante della sapienza tecnica dei Romani è testimoniato dalle fondamenta dei singoli piloni che non sono disgiunti gli uni dagli altri ma formano un'unica fondazione, tale da assicurare la stabilità più completa. La struttura del ponte poggia infatti su un funzionale sistema di pali di legno, perfettamente isolati. Inoltre i piloni sono muniti di speroni frangiflutti, impostati obliquamente rispetto all’asse del ponte, in modo da assecondare la corrente del fiume e riducendone la forza d’urto.
+								</p>
+							</div>
+							<div class="tab tab-2 group1">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/p6HuchrycGA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group1">
+								<p class="loco">Viale Tiberio, 47921 Rimini RN</p>
+								<div class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.9510124393146!2d12.561589815462087!3d44.06372017910928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc397f30421e3%3A0xdf054527bdfd0e5c!2sPonte%20di%20Tiberio%2C%2047921%20Rimini%20RN!5e0!3m2!1sit!2sit!4v1586108632564!5m2!1sit!2sit" width="720" height="250" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hash" id="Arco">
+				<div class="content" id="arco">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group2" data-name="tab-1">Descrizione</div>
+							<div class="tabs-nav_item" data-group="group2" data-name="tab-2">Video</div>
+							<div class="tabs-nav_item"  data-group="group2" data-name="tab-3">Posizione</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group2">
+								<h2>Arco D'Augusto</h2>
+								<p>
+									L’Arco di Augusto, assieme al Ponte di Tiberio, è uno dei simboli romani più antichi di Rimini, nonché un punto di riferimento fondamentale per tutta la città. Il monumento si trova infatti nel centro storico, all’estremità del Corso d’Augusto, che attraversa tutto il centro fino ad arrivare al ponte sopracitato.
+								</p>
+								<p>
+									È uno degli archi superstiti più antichi dell’Italia Settentrionale ed è stato realizzato con pietre d’Istria. Possiede quattro scudi o ritratti rotondi d’epoca romana, in cui sono raffigurate le quattro divinità: Giove, riconoscibile dal simbolo del fulmine; Apollo, raffigurato con cetra e corvo; Nettuno, riconoscibile dal tridente e il delfino, e infine Dea di Roma, rappresentata con il gladio e il trofeo d’armi. Su entrambe le facciate si trovano due teste di bue, simboli rispettivamente della potenza di Roma e di Rimini, diventata colonia romana.
+								</p>
+								<p>
+									L’arco è stato sviluppato in verticale con una fornice molto ampia che non rendeva possibile la chiusura con delle porte. Questa caratteristica era in linea con la politica dell’Imperatore Augusto, volta alla Pax Augustea: non essendoci alcuna minaccia di attacchi nemici non c’era neanche bisogno di chiudere le porte della città. L’arco era stato comunque edificato nello spazio costretto tra due torri e le mura, di cui oggi rimangono solo le rovine, poiché vennero distrutte negli anni del fascismo.
+								</p>
+							</div>
+							<div class="tab tab-2 group2">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/m4KNBsaz4zM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group2">
+								<p class="loco">Corso d'Augusto, 47923 Rimini RN</p>
+								<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.279904396449!2d12.568931015461928!3d44.056928479109594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3a6b416296f%3A0x70f54f5061c1f4a6!2sArco%20di%20Augusto!5e0!3m2!1sit!2sit!4v1586108713117!5m2!1sit!2sit" width="720" height="250" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hash" id="Domus">
+				<div class="content" id="domus">
+					<div class="container">
+						<div class="tabs-nav">
+							<div class="tabs-nav_item is-active" data-group="group3" data-name="tab-1">Descrizione</div>
+							<div class="tabs-nav_item" data-group="group3" data-name="tab-2">Video</div>
+							<div class="tabs-nav_item"  data-group="group3" data-name="tab-3">Posizione</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tab is-active tab-1 group3">
+								<h2>Domus del Chirurgo</h2>
+								<p>
+									Alla fine degli anni '80, in occasione di lavori di arredo urbano della centrale piazza Ferrari, è stato scoperto un sito archeologico di straordinaria importanza, con testimonianze dall'età romana al Medioevo. Nell'area, a ridosso delle mura di Ariminum, non lontano dall'antico porto, sorgeva la "domus del chirurgo", cosiddetta dalla professione dell'ultimo proprietario, un medico di cultura greca. Distrutta per un incendio intorno alla metà del III secolo, la domus ha rivelato, fra le macerie del crollo, strutture, mosaici, intonaci, arredi e suppellettili che offrono una "fotografia" eccezionale della vita nella Rimini antica. Proprio in questo ambiente è stato scoperto un eccezionale corredo chirurgico-farmaceutico, il più ricco al mondo giunto dall'antichità.
+								</p>
+								<p>
+									Dopo aver terminati i lavori di posizionamento di una copertura in vetro e acciaio sulla Domus romana al fine di salvaguardarne la conservazione e permetterne la visita, questa eccezionale scoperta è ora aperta al pubblico. La visita dell'area di scavo si integra con quella della Sezione Archeologica nel vicino Museo della Città (via Tonini 1), ove l'esposizione dei materiali, preceduta da una ricostruzione della taberna medica, documenta momenti della vita professionale e privata.
+								</p>
+							</div>
+							<div class="tab tab-2 group3">
+								<div class="youtube">
+									<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/i7uSZm71jow" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="tab tab-3 group3">
+								<p class="loco">Piazza Luigi Ferrari, 47921 Rimini RN</p>
+								<div class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.017968900893!2d12.565399615462018!3d44.06233757910938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc398828bce71%3A0xf2ea19114827d23a!2sDomus%20del%20Chirurgo!5e0!3m2!1sit!2sit!4v1586108783239!5m2!1sit!2sit" width="720" height="250" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>	
+	<footer>
+		<div class="container">
+			Progetto realizzato da Volga Studitskaya, matricola 566175,<br>
+			per l'esame di Progettazione e Programmazione Web A.A. 2019/20<br>
+			v.studitskaya@studenti.unipi.it
+			<p>
+				Bibliografia<span id="info"></span>
+			</p>
+			<div id="infoModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>Bibliografia</h3>
+					</div>
+					<div class="modal-body">
+						<p>Manuali</p>
+						<ul>
+							<li>Vincenzo Ambriola, <em>Programmazione in JavaScript</em>, Versione 9.0, 30 gennaio 2019.</li>
+							<li>Eric T. Friman/ Elisabeth Robson, <em>Head First. JavaScript Programming</em>, 1st Edition, 2015.</li>
+							<li>Jennifer Niederst Robbins, <em>Learning Web Design</em>, 4th Edition, 2012.</li>
+						</ul>
+						<p>Risorse Internet</p>
+						<ul>
+							<li><a href="https://www.w3schools.com" target="_blank">w3schools.com</a>.</li>
+							<li><a href="https://developer.mozilla.org/it/#" target="_blank">MDN web docs Mozilla</a>.</li>
+							<li><a href="https://stackoverflow.com/questions" target="_blank">Stack Overflow</a>.</li>
+							<li><a href="https://javascript.info" target="_blank">JAVASCRIPT.INFO</a>.</li>
+							<li><a href="https://javascript.ru" target="_blank">javascript.ru</a>.</li>
+							<li><a href="http://shpargalkablog.ru" target="_blank">Shpargalka Bloggera</a>.</li>
+							<li><a href="https://html5book.ru" target="_blank">HTML5book</a>.</li>
+							<li><a href="https://www.youtube.com/watch?v=7HUCAYMylCQ">Coding Journey</a>.</li>
+						</ul>
+						<p>Immagini e testi sono stati acquisiti da internet ed in seguito modificati.<br>
+							Per realizzare i video sono state utilizzate le seguenti applicazioni:
+						</p>
+						<ul>
+							<li>Adobe Photoshop,</li>
+							<li>Adobe Premier pro,</li>
+							<li>Adobe Character Animation,</li>
+							<li>Audacity.</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<span id="close"><strong>Indietro</strong></span>
+					</div>
+				</div>
+			</div>
+			<a href="https://jigsaw.w3.org/css-validator/validator.html.it#validate_by_upload" target="_blank">
+				<img id="w3_css" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
